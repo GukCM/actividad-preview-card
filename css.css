@@ -1,0 +1,83 @@
+    body{
+        background: rgb(226, 216, 216);
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 100vh;
+    }
+
+
+
+    * {
+        /*Todo lo que no esté estilizado tomará estos parametros*/
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    h2{
+        /*Todos los h2 tomarán este estili*/
+        font-family: 'Big Shoulders Display';
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 47.88px;
+        color: #FFFF;
+        margin: 25px 0 35px 0;
+        text-transform: uppercase;
+    }
+    p{
+        font-family: 'Lexend Deca';
+        font-size: 15px;
+        line-height: 25px;
+        color: #FFFF;
+        opacity: 0.75;
+        margin-bottom: 83px;
+    }
+    img{
+        width: 64px;
+        height: 40px;
+    }
+    /*Estilo del card-view base*/
+    .card-view{
+        width: 307px;
+        height: 500px;
+        padding: 48px;
+    }
+    /*Cada hijo tendrá su estilo personalizado, en este caso son 3 hijos*/
+    .card-view:nth-child(1){
+        background: #E28625;
+        border-radius: 8px;
+
+    }
+    .card-view:nth-child(2){
+        background: #006971;
+        border-radius: 8px;
+
+    }
+    .card-view:nth-child(3){
+        background: #004140;
+        border-radius: 8px;
+
+    }
+    /*Los tipo 'button', tomarán este estilo, en este caso los "Learn More"*/
+    [type=button]{
+
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        width: 145px;
+        height: 48px;
+        font-size: 17px;
+        line-height: 25px;
+        border-radius: 25px;
+        border: none;
+    }
+    /*De esta manera cuando el usuario ponga el cursor sobre cualquier botón, este cambiará y tomará este estilo*/
+    button:hover{
+        cursor: pointer;
+        background: rgba(0, 0, 0, 0) ;
+        color: rgb(234, 221, 221);
+        border: 3px solid rgb(0, 0, 0);
+    }
